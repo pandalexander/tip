@@ -3,12 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Please Leave a Tip</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/dollar-sign.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div>
-      <h1>TEST</h1>
+  <body class="roboto-light">
+    <div id="main-screen" class="screen roboto-bold">
+      <h1>Please select a tip&nbsp;amount</h1>
+      <p class="roboto-light">I'll judge you if you refuse...</p>
+      <div class="button-container">
+        <button class="tip-button" data-amount="1">$1</button>
+        <button class="tip-button" data-amount="5">$5</button>
+        <button class="tip-button" data-amount="10">$10</button>
+        <button class="tip-button" data-amount="20">$20</button>
+      </div>
     </div>
+    <div id="thank-you-screen" class="screen hidden">
+      <h1>Thank You</h1>
+      <p class="roboto-light">
+        for obeying the social norms even when they don't make sense
+      </p>
+      <button id="return-button">I Changed My&nbsp;Mind</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
